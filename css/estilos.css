@@ -1,0 +1,566 @@
+@charset "UTF-8"; /*GENERALES*/
+html {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #414042;
+}
+
+h1, h2, h3, h4, h5, h6, .grande, .btn {
+    font-weight: 900;
+    letter-spacing: 0.015em;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #f27549;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+div[class*='col'] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.btn {
+    display: block;
+    background: #f27549;
+    color: white;
+    text-transform: uppercase;
+    width: 190px;
+    margin: 24px auto;
+    border-radius: 100px;
+    transition: background .3s ease;
+    letter-spacing: 0.025em;
+}
+
+.btn-blanco {
+    background: white;
+    color: #f27549;
+}
+
+.btn:hover {
+    background: #ff875d;
+    color: white;
+}
+
+.btn-blanco:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #f27549;
+}
+
+.slick-dots li button:before {
+    font-size: 8px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #f27549;
+    font-size: 12px;
+    opacity: 1;
+}
+
+.num {
+    font-weight: 900;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.subtit {
+    text-transform: uppercase;
+}
+
+.subtit span {
+    color: #f27549;
+}
+
+/*Encabezado*/
+header {
+    text-align: center;
+    padding: 32px 0;
+}
+
+header img {
+    width: 70%
+}
+
+/*Fila 2*/
+#fila-2 {
+    background: url(../img/img-banner-80.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+#fila-2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(242, 117, 73, .6);
+}
+
+#fila-2 .container {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fila-2 .linea-i, #fila-2 .linea-d, #fila-2 .flecha {
+    position: absolute;
+}
+
+#fila-2 .linea-i, #fila-2 .linea-d {
+    height: 1px;
+    background: white;
+    bottom: 40px;
+}
+
+#fila-2 .linea-i {
+    left: 0;
+    right: 55%;
+}
+
+#fila-2 .linea-d {
+    left: 55%;
+    right: 0%;
+}
+
+#fila-2 .flecha {
+    left: 50%;
+    bottom: 20px;
+    margin-left: -20px;
+    padding: 12px;
+    border-radius: 100%;
+    line-height: 1;
+    width: 40px;
+    height: 40px;
+}
+
+#fila-2 .flecha a {
+    display: block;
+    position: absolute;
+    background: #414042;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    padding: 12px;
+    border-radius: 100%;
+    line-height: 1;
+    transition: background-color .5s ease;
+}
+
+#fila-2 .flecha a:hover {
+    background: #f27549;
+}
+
+#fila-2 .container:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 50%;
+    height: 30px;
+    background: #dcd5c7;
+    bottom: -30px;
+}
+
+#fila-2 .grande {
+    background: #f27549;
+    margin: 0 auto;
+    padding: 2px 6px;
+}
+
+/*Fila 3*/
+#fila-3 {
+    padding: 60px 0 30px;
+}
+
+/*Fila 4*/
+.miembro img {
+    width: auto;
+    height: 60px;
+    margin: 16px;
+}
+
+#fila-4 .container {
+    padding: 30px 0;
+    border-bottom: 2px solid #dcd5c7;
+}
+
+/*Fila 5*/
+#fila-5 {
+    background: url(../img/nubes.png) no-repeat center 3rem, url(../img/edificios.png) no-repeat center bottom;
+    background-size: contain;
+}
+
+#fila-5 .planta, #fila-5 .carrito {
+    position: absolute;
+    bottom: -32px;
+}
+
+#fila-5 .planta {
+    width: 96px;
+    left: 10%;
+}
+
+#fila-5 .carrito {
+    width: 202px;
+    right: 0
+}
+
+#fila-5 .container {
+    padding: 50px 0 170px;
+    position: relative;
+}
+
+#fila-5 h3 {
+    border-bottom: 1px solid #f27549;
+    color: white;
+    padding-bottom: 3px;
+    margin-bottom: 2rem;
+}
+
+#fila-5 h3 span {
+    background: #f27549;
+    padding: 3px 12px;
+    box-sizing: border-box;
+}
+
+.bloque > div {
+    border: 1px solid #f27549;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    flex-grow: 1;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#fila-5c, #fila-5d {
+    margin-top: 3rem;
+}
+
+#fila-5 .num {
+    background: #f27549 url(../img/textura.png) repeat;
+    color: white;
+    width: 100px;
+    height: 100px;
+    line-height: 2;
+    margin: 32px auto;
+    border-radius: 100%;
+    position: relative;
+}
+
+#fila-5 .num:after {
+    content: '';
+    background: url(../img/mancha.svg) no-repeat center;
+    position: absolute;
+    width: 136px;
+    height: 122px;
+    z-index: -1;
+    top: -13px;
+    left: -20px;
+}
+
+#fila-5 .bloque:nth-child(1) .num:after {
+    transform: rotate(60deg);
+}
+
+#fila-5 .bloque:nth-child(2) .num:after {
+    transform: rotate(180deg);
+}
+
+#fila-5b .bloque:nth-child(3) .num:after {
+    transform: rotate(-90deg);
+}
+
+#fila-5 .bloque:nth-child(4) .num:after {
+    transform: rotate(200deg);
+}
+
+.bloque-libro {
+    text-align: center;
+}
+
+.bloque-libro > div {
+    background-color: #f27549;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.bloque-libro img {
+    width: 245px;
+    align-self: center;
+}
+
+#fila-5c .subtit {
+    position: absolute;
+    top: 30px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#fila-5c .articulo {
+    text-decoration: none;
+    font-weight: 900;
+    text-align: center;
+}
+
+#fila-5c .articulo a {
+    color: #f27549;
+}
+
+#fila-5c .articulos {
+    padding-top: 90px;
+}
+
+.bloque-gris {
+    background: #ebebeb url(../img/textura.png) repeat;
+    padding: 30px 30px 2px;
+}
+
+#fila-5d h4 {
+    background: #dcd5c7;
+    padding: 6px;
+    margin: 0 auto -12px;
+    z-index: 2;
+    width: 360px;
+    max-width: 100%;
+}
+
+#fila-5d h5 {
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #f27549;
+}
+
+/*Fila 6*/
+#fila-6 {
+    background: #f27549;
+    color: white;
+    padding: 90px 0 50px;
+}
+
+#fila-6 h2 {
+    color: white;
+}
+
+#fila-6 .bloque > div {
+    border-color: white;
+    background: transparent;
+}
+
+#fila-6 p {
+    margin: 16px 0;
+}
+
+#fila-6 h5 {
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+}
+
+/*Fila 7*/
+#fila-7 .bloque > div {
+    padding: 40px 0
+}
+
+#fila-7 .num {
+    color: #f27549;
+    position: relative;
+    line-height: 1;
+}
+
+#fila-7 .num:after {
+    content: '';
+    background: url(../img/mancha.svg) no-repeat center;
+    position: absolute;
+    width: 136px;
+    height: 122px;
+    z-index: -1;
+    top: -13px;
+    left: 50%;
+    margin-left: -70px;
+}
+
+#fila-7 .bloque:nth-child(1) .num:after {
+    transform: rotate(60deg);
+}
+
+#fila-7 .bloque:nth-child(2) .num:after {
+    transform: rotate(180deg);
+}
+
+#fila-7 .bloque:nth-child(3) .num:after {
+    transform: rotate(-90deg);
+}
+
+#fila-7 .num span {
+    font-size: 1rem;
+    display: block;
+}
+
+#fila-7 {
+    background: url(../img/parque.png) no-repeat center bottom;
+    background-size: contain;
+}
+
+#fila-7 .musicos, #fila-7 .perrito {
+    position: absolute;
+}
+
+#fila-7 .musicos {
+    width: 204px;
+    left: 0;
+    bottom: -82px;
+}
+
+#fila-7 .perrito {
+    width: 202px;
+    right: 30px;
+    bottom: -32px;
+}
+
+#fila-7 .container {
+    padding: 50px 0 100px;
+    position: relative;
+}
+
+/*Fila 8*/
+#fila-8 {
+    padding: 90px 0 50px;
+    background: #dcd5c7;
+}
+
+#fila-8 h4 span {
+    background: #f27549;
+    color: white;
+    width: 200px;
+    padding: 4px;
+    display: block;
+    margin: 0 auto 32px;
+}
+
+#fila-8 .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#fila-8 .redes .img-red {
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+    margin: 0 auto 6px;
+    border-radius: 100%;
+}
+
+.facebook .img-red {
+    background: #4267B2;
+}
+
+.twitter .img-red {
+    background: #1DA1F2;
+}
+
+.instagram .img-red {
+    background: #E1306C;
+}
+
+#fila-8 a {
+    font-weight: 900;
+    text-decoration: none;
+    transition: opacity .5s linear;
+    display: block;
+}
+
+#fila-8 a:hover {
+    opacity: .7;
+}
+
+.facebook a {
+    color: #4267B2;
+}
+
+.twitter a {
+    color: #1da1f2;
+}
+
+.instagram a {
+    color: #e1306c;
+}
+
+#fila-8 .red {
+    margin: 0 8px;
+    text-align: center;
+}
+
+footer {
+    padding: 3rem 0;
+    background: #414042;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    header img {
+        width: 100%
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header img {
+        width: 50%;
+        margin-bottom: 16px;
+    }
+}
