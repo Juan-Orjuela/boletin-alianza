@@ -509,8 +509,14 @@ header img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
+    flex-wrap: wrap
+}
+
+#fila-8 .redes .red {
+    width: 20%;
+    margin-bottom: 6px;
 }
 
 #fila-8 .redes .img-red {
@@ -591,7 +597,7 @@ footer p {
 
 @media screen and (max-width: 576px) {
     header img {
-        width: 50%;
+        width: 40%;
         margin-bottom: 16px;
     }
 
@@ -601,6 +607,14 @@ footer p {
 
     #fila-2 .grande {
         font-size: 1rem;
+    }
+
+    #fila-8 .redes .red {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
     }
 }
 
