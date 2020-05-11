@@ -353,7 +353,7 @@ header img {
 
 .bloque-gris {
     background: #ebebeb url(../img/textura.png) repeat;
-    padding: 30px 30px 2px;
+    padding: 50px 30px 22px;
 }
 
 #fila-5d h4 {
@@ -367,7 +367,7 @@ header img {
 
 #fila-5d h5 {
     text-align: left;
-    margin-bottom: 2rem;
+    margin: 1rem 0;
     color: #f27549;
 }
 
@@ -385,6 +385,7 @@ header img {
 #fila-6 .bloque > div {
     border-color: white;
     background: transparent;
+    justify-content: flex-start;
 }
 
 #fila-6 p {
