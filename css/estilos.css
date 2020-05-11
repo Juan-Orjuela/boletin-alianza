@@ -593,12 +593,20 @@ footer p {
     h1 {
         font-size: 1.6rem;
     }
+    #fila-2 {
+    background-attachment: initial;
+
+}
 }
 
 @media screen and (max-width: 576px) {
     header img {
         width: 40%;
         margin-bottom: 16px;
+    }
+    header .col-sm-4:last-child img {
+       
+        margin-bottom: 0;
     }
 
     h1 {
