@@ -593,10 +593,10 @@ footer p {
     h1 {
         font-size: 1.6rem;
     }
-    #fila-2 {
-    background-attachment: initial;
 
-}
+    #fila-2 {
+        background-attachment: initial;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -604,13 +604,18 @@ footer p {
         width: 40%;
         margin-bottom: 16px;
     }
+
     header .col-sm-4:last-child img {
-       
         margin-bottom: 0;
     }
 
-    h1 {
-        font-size: 1.2rem;
+    #fila-2 h1 {
+        text-shadow: 3px 3px 0 #00000061;
+    }
+
+    #fila-2 h1 span {
+        background: transparent;
+        color: #f27549;
     }
 
     #fila-2 .grande {
@@ -623,6 +628,10 @@ footer p {
 
     h2 {
         font-size: 1.4rem;
+    }
+
+    .container {
+        max-width: 85vw; 
     }
 }
 
