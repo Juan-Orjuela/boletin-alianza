@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6, .btn {
 }
 
 h1 {
-    font-size: 2.6rem;
+    font-size: 3.6rem;
 }
 
 h2 {
@@ -143,11 +143,11 @@ header img {
     position: absolute;
 }
 
-#fila-2 .linea-i, #fila-2 .linea-d {
+/*#fila-2 .linea-i, #fila-2 .linea-d {
     height: 1px;
     background: white;
     bottom: 40px;
-}
+}*/
 
 #fila-2 .linea-i {
     left: 0;
@@ -230,7 +230,20 @@ header img {
 
 /*Fila 3*/
 #fila-3 {
-    padding: 60px 0 30px;
+    padding: 90px 0 30px;
+}
+.cont-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.cont-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /*Fila 4*/
@@ -578,7 +591,11 @@ footer {
 footer p {
     margin: 0;
 }
-
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+}
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 2.2rem;
