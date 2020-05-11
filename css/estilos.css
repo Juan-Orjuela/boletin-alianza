@@ -11,7 +11,7 @@ body {
     color: #414042;
 }
 
-h1, h2, h3, h4, h5, h6, .grande, .btn {
+h1, h2, h3, h4, h5, h6, .btn {
     font-weight: 900;
     letter-spacing: 0.015em;
 }
@@ -114,7 +114,7 @@ header img {
 
 /*Fila 2*/
 #fila-2 {
-    background: url(../img/img-banner-80.jpg) center no-repeat;
+    background: url(../img/inicio-boletin-alianza.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
@@ -128,12 +128,12 @@ header img {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(242, 117, 73, .6);
+    background: rgba(242, 117, 73, .2);
 }
 
 #fila-2 .container {
     position: relative;
-    min-height: 60vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,9 +199,33 @@ header img {
 }
 
 #fila-2 .grande {
-    background: #f27549;
-    margin: 0 auto;
+    background: rgba(242, 117, 73, 0.7);
+    margin: 0;
     padding: 2px 6px;
+    font-size: 1.2rem;
+}
+
+#fila-2 .container {
+}
+
+#fila-2 .row {
+    flex-grow: 1;
+}
+
+#fila-2 .col {
+    justify-content: space-between;
+    margin: 60px 0 90px;
+}
+
+#fila-2 .row h1 {
+    text-align: left;
+}
+
+#fila-2 h1 span {
+    background: rgba(242, 117, 73, 0.7);
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: -12px;
 }
 
 /*Fila 3*/
@@ -549,6 +573,12 @@ footer p {
     margin: 0;
 }
 
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     header img {
         width: 100%
@@ -563,5 +593,29 @@ footer p {
     header img {
         width: 50%;
         margin-bottom: 16px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #fila-2 .grande {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #fila-2 h1 {
+        font-size: 1.4rem;
+        text-shadow: 3px 3px 0 #00000061;
+    }
+
+    #fila-2 h1 span {
+        background: transparent;
+        color: #f27549;
+    }
+
+    #fila-2 .grande {
+        font-size: 1rem;
     }
 }
